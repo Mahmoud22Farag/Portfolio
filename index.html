@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mahmoud Farag | Performance Media Buyer Portfolio</title>
+<meta name="description" content="Performance media buyer, Cairo. $57K Meta ad spend across 25+ brands and 24 industries in Egypt and KSA: 73.6K WhatsApp/Messenger conversations at $0.32, 7.2K leads at $1.57. Plan vs result case studies.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mahmoud22farag.github.io/Portfolio/">
+<meta property="og:title" content="Mahmoud Farag | Performance Media Buyer">
+<meta property="og:description" content="$57K Meta ad spend, 25+ brands, 24 industries. 73.6K conversations at $0.32 and 7.2K leads at $1.57. Every case: the plan I wrote, then the result.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Mahmoud Farag | Performance Media Buyer">
+<meta name="twitter:description" content="$57K Meta ad spend, 25+ brands, 24 industries. Plan vs result case studies.">
+<style>
+  :root{
+    --navy:#1b2a4a;
+    --orange:#ee7b1e;
+    --ink:#26314a;
+    --muted:#5c6478;
+    --faint:#8a90a3;
+    --card:#f3f4f8;
+    --track:#d8dbe6;
+    --line:#e4e6ee;
+    --white:#ffffff;
+    --green:#1f9d55;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:"Segoe UI","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color:var(--ink);background:var(--white);line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  .topbar{height:6px;background:var(--orange);}
+  .wrap{max-width:880px;margin:0 auto;padding:0 22px;}
+  section{padding:64px 0 48px;border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+  .kicker{color:var(--orange);font-size:13px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;margin-bottom:14px;}
+  h1{font-size:44px;line-height:1.12;color:var(--navy);font-weight:800;margin-bottom:14px;}
+  h2{font-size:36px;line-height:1.15;color:var(--navy);font-weight:800;margin-bottom:10px;}
+  h3{color:var(--navy);}
+  .sub{color:var(--muted);font-size:17px;margin-bottom:34px;max-width:660px;}
+  .about{font-size:18px;color:var(--ink);max-width:680px;margin-bottom:26px;}
+  .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:38px;}
+  .btn{display:inline-block;padding:12px 22px;border-radius:8px;font-weight:700;font-size:16px;text-decoration:none;}
+  .btn.wa{background:var(--green);color:#fff;}
+  .btn.ghost{border:2px solid var(--navy);color:var(--navy);}
+  .btn:hover{opacity:.9;}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+  .card{background:var(--card);border-left:5px solid var(--orange);border-radius:10px;padding:22px 24px;}
+  .stat{font-size:34px;font-weight:800;color:var(--navy);margin-bottom:6px;}
+  .stat-label{color:var(--muted);font-size:15px;}
+  .note{margin-top:30px;color:var(--muted);font-size:16px;max-width:660px;}
+  .src{margin-top:22px;color:var(--faint);font-size:14px;}
+
+  /* industries */
+  .ind-group{margin-bottom:30px;}
+  .ind-group h3{font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);margin-bottom:12px;}
+  .ind-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+  .ind{background:var(--card);border-radius:10px;padding:14px 16px;}
+  .ind-name{font-weight:700;color:var(--navy);font-size:15px;line-height:1.3;}
+  .ind-mkt{color:var(--faint);font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-left:4px;}
+  .ind-num{color:var(--orange);font-weight:800;font-size:20px;margin-top:6px;}
+  .ind-per{color:var(--faint);font-size:12px;font-weight:600;}
+  .ind-sub{color:var(--muted);font-size:13px;}
+
+  /* plan vs result */
+  .pr{background:var(--card);border-radius:10px;padding:20px 24px 26px;margin-bottom:18px;}
+  .pr-label{font-weight:700;color:var(--muted);font-size:15px;margin-bottom:12px;}
+  .pr-row{display:flex;align-items:baseline;gap:22px;flex-wrap:wrap;}
+  .pr-plan{color:var(--faint);font-size:24px;font-weight:600;min-width:90px;}
+  .pr-arrow{color:var(--orange);font-size:24px;font-weight:700;}
+  .pr-result{color:var(--navy);font-size:34px;font-weight:800;}
+  .pr-extra{color:var(--muted);font-size:14px;width:100%;margin-top:2px;}
+  .legend{color:var(--faint);font-size:13px;margin:-6px 0 16px;}
+  .bars{margin-top:14px;}
+  .bar{height:9px;border-radius:6px;}
+  .bar.track{background:var(--track);margin-bottom:7px;}
+  .bar.fill{background:var(--orange);}
+  .takeaway{background:var(--navy);color:#fff;border-radius:10px;padding:26px 30px;font-size:21px;font-weight:700;line-height:1.4;margin:26px 0 18px;}
+  .takeaway small{display:block;font-size:15px;font-weight:400;opacity:.85;margin-top:8px;}
+
+  /* process */
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;counter-reset:s;}
+  .step{background:var(--card);border-radius:10px;padding:18px;border-top:4px solid var(--orange);}
+  .step b{display:block;color:var(--navy);font-size:17px;margin-bottom:6px;}
+  .step b::before{counter-increment:s;content:counter(s) ". ";color:var(--orange);}
+  .step p{color:var(--muted);font-size:14px;}
+
+  /* lists */
+  .plan-item{border-left:5px solid var(--orange);padding:8px 0 8px 20px;margin-bottom:18px;}
+  .plan-item h3{font-size:19px;font-weight:700;}
+  .plan-item p{color:var(--muted);font-size:15px;}
+  .tags{display:flex;flex-wrap:wrap;gap:8px;}
+  .tag{background:var(--card);border-radius:20px;padding:6px 14px;font-size:14px;color:var(--ink);}
+
+  /* contact */
+  .contact-card{background:var(--card);border-radius:12px;padding:34px 36px;}
+  .contact-list{list-style:none;margin-top:20px;}
+  .contact-list li{margin-bottom:14px;font-size:17px;}
+  .contact-list .lbl{display:inline-block;min-width:96px;color:var(--faint);font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;}
+  .contact-list a{color:var(--navy);font-weight:600;text-decoration:none;border-bottom:2px solid var(--orange);}
+  .contact-list a:hover{color:var(--orange);}
+  footer{padding:28px 0 40px;color:var(--faint);font-size:13px;}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;}
+
+  @media (max-width:640px){
+    h1{font-size:32px;} h2{font-size:27px;}
+    .grid{grid-template-columns:1fr;}
+    .ind-grid{grid-template-columns:1fr 1fr;}
+    .steps{grid-template-columns:1fr 1fr;}
+    .stat{font-size:29px;} .pr-result{font-size:29px;}
+    .takeaway{font-size:18px;padding:22px;}
+    section{padding:48px 0 38px;}
+    .contact-card{padding:26px 22px;}
+  }
+</style>
+</head>
+<body>
+<div class="topbar"></div>
+
+<!-- Cover -->
+<section>
+  <div class="wrap">
+    <p class="kicker">Portfolio</p>
+    <h1>Mahmoud Farag<br>Performance Media Buyer</h1>
+    <p class="about">I run Meta ads end to end for lead generation and WhatsApp sales: written plan with KPI targets, tracking setup (Pixel, CAPI, GA4), launch, weekly optimization, and a test report against the plan. Computer Science graduate, based in Cairo, working with brands in Egypt and Saudi Arabia.</p>
+    <div class="cta-row">
+      <a class="btn wa" href="https://wa.me/201032861196" target="_blank" rel="noopener">Message me on WhatsApp</a>
+      <a class="btn ghost" href="#cases">See case studies</a>
+    </div>
+    <div class="grid">
+      <div class="card"><div class="stat">$57K</div><div class="stat-label">Meta ad spend managed, Nov 2025 to Nov 2026</div></div>
+      <div class="card"><div class="stat">25+ brands</div><div class="stat-label">across 24 industries, 187 campaigns with spend</div></div>
+      <div class="card"><div class="stat">73.6K</div><div class="stat-label">WhatsApp / Messenger conversations at $0.32 average</div></div>
+      <div class="card"><div class="stat">7.2K</div><div class="stat-label">lead-form leads at $1.57 average</div></div>
+    </div>
+    <p class="note">Client names are withheld; each brand is shown by industry and market.</p>
+  </div>
+</section>
+
+<!-- Overview -->
+<section>
+  <div class="wrap">
+    <p class="kicker">Overview</p>
+    <h2>Results across all campaigns</h2>
+    <p class="sub">Source: Meta Ads Manager exports, Nov 1, 2025 to Nov 24, 2026</p>
+    <div class="grid">
+      <div class="card"><div class="stat">$0.32</div><div class="stat-label">average cost per WhatsApp / Messenger conversation (73,591 conversations, $23.4K)</div></div>
+      <div class="card"><div class="stat">$1.57</div><div class="stat-label">average cost per lead-form lead (7,247 leads, $11.4K)</div></div>
+      <div class="card"><div class="stat">$0.035</div><div class="stat-label">best campaign: 5,321 conversations on $186 (pharmacy chain)</div></div>
+      <div class="card"><div class="stat">$0.05</div><div class="stat-label">per conversation for overseas recruitment: 4,782 candidates on $233</div></div>
+      <div class="card"><div class="stat">$0.79</div><div class="stat-label">best lead campaign over $800 spend: 1,057 leads (training &amp; consulting)</div></div>
+      <div class="card"><div class="stat">$4.08</div><div class="stat-label">cost per tracked purchase, 297 purchases on $1.2K (coffee e-commerce, Pixel + CAPI)</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Industries -->
+<section>
+  <div class="wrap">
+    <p class="kicker">Industries</p>
+    <h2>24 industries, one method</h2>
+    <p class="sub">Each card shows the main result type for that brand over the data window. KSA = Saudi market; all others Egypt.</p>
+
+    <div class="ind-group">
+      <h3>Real estate &amp; construction</h3>
+      <div class="ind-grid">
+        <div class="ind"><div class="ind-name">Real estate developer</div><div class="ind-num">$1.41 <span class="ind-per">per conversation</span></div><div class="ind-sub">4,718 buyer conversations</div></div>
+        <div class="ind"><div class="ind-name">Pergolas &amp; garden outdoor</div><div class="ind-num">$1.49 <span class="ind-per">per lead</span></div><div class="ind-sub">1,543 leads + 929 conversations</div></div>
+        <div class="ind"><div class="ind-name">Cladding facades</div><div class="ind-num">$0.47 <span class="ind-per">per conversation</span></div><div class="ind-sub">1,363 conversations + 695 leads</div></div>
+        <div class="ind"><div class="ind-name">Corporate cladding facades</div><div class="ind-num">$1.82 <span class="ind-per">per lead</span></div><div class="ind-sub">273 B2B leads</div></div>
+        <div class="ind"><div class="ind-name">Elevators <span class="ind-mkt">KSA</span></div><div class="ind-num">$0.46 <span class="ind-per">per conversation</span></div><div class="ind-sub">1,470 conversations</div></div>
+        <div class="ind"><div class="ind-name">Metal &amp; fire-rated doors</div><div class="ind-num">$2.73 <span class="ind-per">per lead</span></div><div class="ind-sub">160 B2B leads + 243 conversations</div></div>
+        <div class="ind"><div class="ind-name">Building materials</div><div class="ind-num">$0.71 <span class="ind-per">per conversation</span></div><div class="ind-sub">922 conversations</div></div>
+      </div>
+    </div>
+
+    <div class="ind-group">
+      <h3>Furniture &amp; home</h3>
+      <div class="ind-grid">
+        <div class="ind"><div class="ind-name">Restaurant &amp; caf&eacute; furniture</div><div class="ind-num">$0.46 <span class="ind-per">per conversation</span></div><div class="ind-sub">1,470 conversations + 1,017 leads</div></div>
+        <div class="ind"><div class="ind-name">Office furniture (B2B)</div><div class="ind-num">$1.07 <span class="ind-per">per conversation</span></div><div class="ind-sub">318 conversations + 206 leads</div></div>
+        <div class="ind"><div class="ind-name">Home furnishing &amp; bedding</div><div class="ind-num">$0.29 <span class="ind-per">per conversation</span></div><div class="ind-sub">322 conversations</div></div>
+      </div>
+    </div>
+
+    <div class="ind-group">
+      <h3>Retail &amp; e-commerce</h3>
+      <div class="ind-grid">
+        <div class="ind"><div class="ind-name">iPhone &amp; Apple store</div><div class="ind-num">$0.33 <span class="ind-per">per conversation</span></div><div class="ind-sub">12,000 sales conversations</div></div>
+        <div class="ind"><div class="ind-name">Coffee e-commerce</div><div class="ind-num">$4.08 <span class="ind-per">per purchase</span></div><div class="ind-sub">297 tracked purchases</div></div>
+        <div class="ind"><div class="ind-name">Bicycles</div><div class="ind-num">$0.09 <span class="ind-per">per conversation</span></div><div class="ind-sub">9,057 conversations</div></div>
+        <div class="ind"><div class="ind-name">Socks</div><div class="ind-num">$0.19 <span class="ind-per">per conversation</span></div><div class="ind-sub">1,597 conversations</div></div>
+        <div class="ind"><div class="ind-name">Silicone cookware</div><div class="ind-num">$0.19 <span class="ind-per">per conversation</span></div><div class="ind-sub">755 conversations</div></div>
+        <div class="ind"><div class="ind-name">Dried fruit</div><div class="ind-num">$0.20 <span class="ind-per">per conversation</span></div><div class="ind-sub">545 conversations</div></div>
+        <div class="ind"><div class="ind-name">Frozen fish &amp; meat</div><div class="ind-num">$0.15 <span class="ind-per">per conversation</span></div><div class="ind-sub">783 conversations</div></div>
+      </div>
+    </div>
+
+    <div class="ind-group">
+      <h3>Health</h3>
+      <div class="ind-grid">
+        <div class="ind"><div class="ind-name">Pharmacy chain</div><div class="ind-num">$0.18 <span class="ind-per">per conversation</span></div><div class="ind-sub">29,623 order conversations</div></div>
+        <div class="ind"><div class="ind-name">Dental clinic</div><div class="ind-num">$0.69 <span class="ind-per">per conversation</span></div><div class="ind-sub">333 conversations + 122 leads</div></div>
+      </div>
+    </div>
+
+    <div class="ind-group">
+      <h3>Services &amp; B2B</h3>
+      <div class="ind-grid">
+        <div class="ind"><div class="ind-name">Training &amp; certification</div><div class="ind-num">$1.06 <span class="ind-per">per lead</span></div><div class="ind-sub">1,909 leads</div></div>
+        <div class="ind"><div class="ind-name">Overseas recruitment</div><div class="ind-num">$0.05 <span class="ind-per">per conversation</span></div><div class="ind-sub">4,782 candidate conversations</div></div>
+        <div class="ind"><div class="ind-name">Kids English academy</div><div class="ind-num">$0.90 <span class="ind-per">per lead</span></div><div class="ind-sub">366 leads + 862 conversations</div></div>
+        <div class="ind"><div class="ind-name">Finance outsourcing</div><div class="ind-num">$8.11 <span class="ind-per">per lead</span></div><div class="ind-sub">132 B2B leads</div></div>
+        <div class="ind"><div class="ind-name">Legal &amp; accounting firm</div><div class="ind-num">$2.99 <span class="ind-per">per lead</span></div><div class="ind-sub">37 B2B leads</div></div>
+      </div>
+    </div>
+    <p class="src">Cost per result from Meta Ads Manager exports, Nov 1, 2025 to Nov 24, 2026. Leads = lead forms; conversations = WhatsApp / Messenger.</p>
+  </div>
+</section>
+
+<!-- How I work -->
+<section>
+  <div class="wrap">
+    <p class="kicker">Method</p>
+    <h2>How I work</h2>
+    <p class="sub">The same four steps for every client, so results can be checked against what was promised.</p>
+    <div class="steps">
+      <div class="step"><b>Plan</b><p>Objective, market, personas, offer, budget and KPI targets, written before launch.</p></div>
+      <div class="step"><b>Test</b><p>15 to 20 days: audiences, creatives and channels (WhatsApp vs lead form) against each other.</p></div>
+      <div class="step"><b>Report</b><p>Ad test report: plan vs result, lead-sheet quality, what to stop and what to keep.</p></div>
+      <div class="step"><b>Scale</b><p>Budget moves weekly to the winning creatives and audiences; new tests run in parallel.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Case 1 -->
+<section id="cases">
+  <div class="wrap">
+    <p class="kicker">Case Study 1&nbsp;|&nbsp;Plan vs Result</p>
+    <h2>Office furniture (B2B)</h2>
+    <p class="sub">Test phase, Sep 2026: $300 budget, 90 leads, 18 real customers.</p>
+    <p class="legend">Grey = plan, orange = result</p>
+    <div class="pr">
+      <div class="pr-label">Leads</div>
+      <div class="pr-row"><span class="pr-plan">90</span><span class="pr-arrow">&rarr;</span><span class="pr-result">95</span></div>
+      <div class="bars"><div class="bar track" style="width:95%"></div><div class="bar fill" style="width:100%"></div></div>
+    </div>
+    <div class="pr">
+      <div class="pr-label">Real customers</div>
+      <div class="pr-row"><span class="pr-plan">18</span><span class="pr-arrow">&rarr;</span><span class="pr-result">17</span></div>
+      <div class="bars"><div class="bar track" style="width:100%"></div><div class="bar fill" style="width:94%"></div></div>
+    </div>
+    <div class="pr">
+      <div class="pr-label">Spend</div>
+      <div class="pr-row"><span class="pr-plan">$300</span><span class="pr-arrow">&rarr;</span><span class="pr-result">$230</span></div>
+      <div class="bars"><div class="bar track" style="width:100%"></div><div class="bar fill" style="width:77%"></div></div>
+    </div>
+    <div class="takeaway">About $13.50 per real customer, within 1 customer of target on 23% less budget.<small>Planned cost per customer was $16.70.</small></div>
+    <p class="src">Source: ad test report, Sep 4 to 20, 2026. Winning creatives identified for scaling.</p>
+  </div>
+</section>
+
+<!-- Case 2 -->
+<section>
+  <div class="wrap">
+    <p class="kicker">Case Study 2&nbsp;|&nbsp;Plan vs Result</p>
+    <h2>Metal &amp; fire-rated doors (B2B)</h2>
+    <p class="sub">Test phase, Sep 2026: $195 budget, 75 leads, 9 real customers. Targets: contractors, consultants, procurement and developers.</p>
+    <div class="pr">
+      <div class="pr-label">Leads</div>
+      <div class="pr-row"><span class="pr-plan">75</span><span class="pr-arrow">&rarr;</span><span class="pr-result">57</span></div>
+      <div class="bars"><div class="bar track" style="width:100%"></div><div class="bar fill" style="width:76%"></div></div>
+    </div>
+    <div class="pr">
+      <div class="pr-label">Qualified customers</div>
+      <div class="pr-row"><span class="pr-plan">9</span><span class="pr-arrow">&rarr;</span><span class="pr-result">24</span></div>
+      <div class="bars"><div class="bar track" style="width:37%"></div><div class="bar fill" style="width:100%"></div></div>
+    </div>
+    <div class="pr">
+      <div class="pr-label">Budget</div>
+      <div class="pr-row"><span class="pr-plan">$195</span><span class="pr-arrow">&rarr;</span><span class="pr-result">$195</span></div>
+      <div class="bars"><div class="bar track" style="width:100%"></div><div class="bar fill" style="width:100%"></div></div>
+    </div>
+    <div class="takeaway">About $8 per qualified customer: 2.7x the target on the planned budget.<small>Planned cost per customer was $21.70. 42% of leads qualified vs 12% planned.</small></div>
+    <p class="src">Source: ad test report, Sep 1 to 21, 2026. Lead volume was under plan; the report sets the spend needed to scale it.</p>
+  </div>
+</section>
+
+<!-- Case 3 -->
+<section>
+  <div class="wrap">
+    <p class="kicker">Case Study 3&nbsp;|&nbsp;Plan vs Result</p>
+    <h2>Pharmacy chain</h2>
+    <p class="sub">Test phase, Dec 2025: $118 budget, 23 expected orders via WhatsApp and Messenger.</p>
+    <div class="pr">
+      <div class="pr-label">Orders (to Dec 7)</div>
+      <div class="pr-row"><span class="pr-plan">23</span><span class="pr-arrow">&rarr;</span><span class="pr-result">33</span></div>
+      <div class="bars"><div class="bar track" style="width:70%"></div><div class="bar fill" style="width:100%"></div></div>
+    </div>
+    <div class="pr">
+      <div class="pr-label">Spend</div>
+      <div class="pr-row"><span class="pr-plan">$118</span><span class="pr-arrow">&rarr;</span><span class="pr-result">$118</span></div>
+      <div class="bars"><div class="bar track" style="width:100%"></div><div class="bar fill" style="width:100%"></div></div>
+    </div>
+    <div class="pr">
+      <div class="pr-label">After the test: 12 months</div>
+      <div class="pr-row"><span class="pr-plan">$5.2K spent</span><span class="pr-arrow">&rarr;</span><span class="pr-result">29.6K</span>
+        <span class="pr-extra">WhatsApp / Messenger conversations at $0.18. Best campaign: 5,321 conversations at $0.035.</span></div>
+    </div>
+    <div class="takeaway">About $3.60 per order, 43% more orders than planned.<small>Month one produced 1 order. The report traced it to slow replies and gaps in the lead sheet; month two reached 33 after the fixes.</small></div>
+    <p class="src">Source: ad test report, Nov to Dec 2025, and Meta Ads Manager exports.</p>
+  </div>
+</section>
+
+<!-- Case 4 -->
+<section>
+  <div class="wrap">
+    <p class="kicker">Case Study 4&nbsp;|&nbsp;Channel Test</p>
+    <h2>Restaurant &amp; caf&eacute; furniture</h2>
+    <p class="sub">Test phase, Aug 2025: lead forms vs WhatsApp across two strategies (about $95 each). Then the winning channel at scale.</p>
+    <div class="pr">
+      <div class="pr-label">12-month cost per result, 2026</div>
+      <div class="pr-row"><span class="pr-plan">Lead form $2.01</span><span class="pr-arrow">vs</span><span class="pr-result">WhatsApp $0.46</span>
+        <span class="pr-extra">1,017 lead-form leads on $2.0K vs 1,470 WhatsApp conversations on $669</span></div>
+      <div class="bars"><div class="bar track" style="width:100%"></div><div class="bar fill" style="width:23%"></div></div>
+    </div>
+    <div class="takeaway">WhatsApp delivered results at about a quarter of the lead-form cost.<small>The test also moved budget away from cheap, fake form leads toward qualified buyers.</small></div>
+    <p class="src">Source: ad test report, Aug 2025, and Meta Ads Manager exports, Nov 2025 to Nov 2026.</p>
+  </div>
+</section>
+
+<!-- Case 5 -->
+<section>
+  <div class="wrap">
+    <p class="kicker">Case Study 5&nbsp;|&nbsp;Scale</p>
+    <h2>Real estate developer</h2>
+    <p class="sub">Compound and resort projects (Red Sea coast and New Cairo), WhatsApp and Messenger to the sales team, 12 months.</p>
+    <div class="grid">
+      <div class="card"><div class="stat">4,718</div><div class="stat-label">buyer conversations</div></div>
+      <div class="card"><div class="stat">$1.41</div><div class="stat-label">average per conversation on $6.7K tracked spend</div></div>
+      <div class="card"><div class="stat">$1.25</div><div class="stat-label">best campaign: 1,641 conversations on $2.05K</div></div>
+      <div class="card"><div class="stat">2 locations</div><div class="stat-label">Red Sea resort and New Cairo, run as separate campaigns</div></div>
+    </div>
+    <p class="src">Source: Meta Ads Manager exports, Nov 1, 2025 to Nov 24, 2026.</p>
+  </div>
+</section>
+
+<!-- Case 6 -->
+<section>
+  <div class="wrap">
+    <p class="kicker">Case Study 6&nbsp;|&nbsp;Plan vs Result</p>
+    <h2>Bicycles</h2>
+    <p class="sub">Test phase, Nov 25 to Dec 20, 2025: $195 test budget, WhatsApp and Messenger.</p>
+    <div class="pr">
+      <div class="pr-label">Spend</div>
+      <div class="pr-row"><span class="pr-plan">$195</span><span class="pr-arrow">&rarr;</span><span class="pr-result">$227</span></div>
+      <div class="bars"><div class="bar track" style="width:86%"></div><div class="bar fill" style="width:100%"></div></div>
+    </div>
+    <div class="pr">
+      <div class="pr-label">Conversations in the test</div>
+      <div class="pr-row"><span class="pr-plan">20 days</span><span class="pr-arrow">&rarr;</span><span class="pr-result">1,694</span>
+        <span class="pr-extra">721 Messenger + 973 WhatsApp, about $0.13 each. The report recorded the targets as met and exceeded.</span></div>
+    </div>
+    <div class="takeaway">Scaled to 9,057 conversations at $0.09 over the year.<small>Next step set by the report: customer videos, unboxing and warranty messaging for older buyers.</small></div>
+    <p class="src">Source: ad test report, Nov to Dec 2025, and Meta Ads Manager exports.</p>
+  </div>
+</section>
+
+<!-- Case 7 -->
+<section>
+  <div class="wrap">
+    <p class="kicker">Case Study 7&nbsp;|&nbsp;Test</p>
+    <h2>Training &amp; certification</h2>
+    <p class="sub">Test phase, Aug 2025: $150 budget to test lead forms vs messages for a professional certification course.</p>
+    <div class="pr">
+      <div class="pr-label">Budget</div>
+      <div class="pr-row"><span class="pr-plan">$150</span><span class="pr-arrow">&rarr;</span><span class="pr-result">$105 used</span><span class="pr-extra">8 days</span></div>
+      <div class="bars"><div class="bar track" style="width:100%"></div><div class="bar fill" style="width:70%"></div></div>
+    </div>
+    <div class="pr">
+      <div class="pr-label">Lead-form leads</div>
+      <div class="pr-row"><span class="pr-result">37</span><span class="pr-extra">33 converted to the orientation session</span></div>
+    </div>
+    <div class="pr">
+      <div class="pr-label">Message leads</div>
+      <div class="pr-row"><span class="pr-result">25</span><span class="pr-extra">11 converted</span></div>
+    </div>
+    <div class="takeaway">Lead forms won: 89% conversion vs 44% for messages.<small>Scaled on lead forms: 1,909 leads at $1.06 over the following 12 months.</small></div>
+    <p class="src">Source: ad test report, Aug 2025 (before the main data window), and Meta Ads Manager exports.</p>
+  </div>
+</section>
+
+<!-- More plans -->
+<section>
+  <div class="wrap">
+    <p class="kicker">Also Built</p>
+    <h2>More ad plans</h2>
+    <p class="sub">Full plans: objective, market, personas, offer, budget and KPIs</p>
+    <div class="plan-item"><h3>Medical supplies manufacturer</h3><p>Distributor funnel: 900 leads, 300 qualified, 45 deals over 6 months</p></div>
+    <div class="plan-item"><h3>Dental clinic</h3><p>500 attended patients in 5 months, plus a B2B corporate program targeting 50 companies</p></div>
+    <div class="plan-item"><h3>Overseas recruitment <span class="ind-mkt">KSA</span></h3><p>Saudi employers and Egyptian candidates: 200 to 250 B2B leads and 30 to 45 hiring meetings</p></div>
+    <div class="plan-item"><h3>Elevators <span class="ind-mkt">KSA</span></h3><p>Separate lead forms for developers and traders in Riyadh, Jeddah, Khobar and Dammam</p></div>
+    <div class="plan-item"><h3>Finance &amp; bookkeeping outsourcing</h3><p>UGC test, $150 over 15 days, 70-lead target</p></div>
+    <div class="plan-item"><h3>Legal &amp; accounting firm</h3><p>3-month awareness to lead-generation ramp with qualifying lead form</p></div>
+    <div class="plan-item"><h3>Home furnishing &amp; bedding</h3><p>Bundles and offers test to find the best-selling products</p></div>
+    <div class="plan-item"><h3>iPhone &amp; Apple store</h3><p>Website sales: traffic and conversion split with catalog retargeting</p></div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section>
+  <div class="wrap">
+    <p class="kicker">Toolkit</p>
+    <h2>Platforms &amp; tracking</h2>
+    <div class="tags" style="margin-top:20px;">
+      <span class="tag">Meta Ads</span><span class="tag">WhatsApp &amp; Messenger funnels</span><span class="tag">Lead forms</span>
+      <span class="tag">TikTok Ads</span><span class="tag">Google Ads</span><span class="tag">Meta Pixel</span><span class="tag">Conversions API</span>
+      <span class="tag">GA4</span><span class="tag">Google Tag Manager</span><span class="tag">Looker Studio</span><span class="tag">Catalog &amp; retargeting</span>
+      <span class="tag">A/B &amp; creative testing</span><span class="tag">HTML / CSS / JS</span>
+    </div>
+    <p class="note">Also run my own outdoor furniture and pergola brand, with all ads, tracking and the website built in-house.</p>
+  </div>
+</section>
+
+<!-- Contact -->
+<section>
+  <div class="wrap">
+    <div class="contact-card">
+      <p class="kicker">Contact</p>
+      <h2>Mahmoud Farag</h2>
+      <p class="sub" style="margin-bottom:0;">Performance Media Buyer, Cairo, Egypt</p>
+      <ul class="contact-list">
+        <li><span class="lbl">WhatsApp</span> <a href="https://wa.me/201032861196" target="_blank" rel="noopener">+20 103 286 1196</a></li>
+        <li><span class="lbl">Email</span> <a href="mailto:mahmood22farrag@gmail.com">mahmood22farrag@gmail.com</a></li>
+        <li><span class="lbl">LinkedIn</span> <a href="https://www.linkedin.com/in/mahmoud-farag-9a088b226" target="_blank" rel="noopener">linkedin.com/in/mahmoud-farag-9a088b226</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Mahmoud Farag&nbsp;|&nbsp;Media Buyer Portfolio</span>
+    <span>Figures from Meta Ads Manager exports, Nov 1, 2025 to Nov 24, 2026, and client ad test reports.</span>
+  </div>
+</footer>
+
+</body>
+</html>
