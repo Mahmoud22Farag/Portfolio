@@ -95,6 +95,27 @@
   .tags{display:flex;flex-wrap:wrap;gap:8px;}
   .tag{background:var(--card);border-radius:20px;padding:6px 14px;font-size:14px;color:var(--ink);}
 
+
+  /* account growth */
+  .tbl-wrap{overflow-x:auto;margin:18px 0 8px;border-radius:10px;border:1px solid var(--line);}
+  table.data{border-collapse:collapse;width:100%;font-size:13px;min-width:700px;}
+  table.data th,table.data td{padding:9px 8px;text-align:right;border-bottom:1px solid var(--line);white-space:nowrap;}
+  table.data th:first-child,table.data td:first-child{text-align:left;}
+  table.data thead th{background:var(--navy);color:#fff;font-weight:700;font-size:13px;}
+  table.data thead tr:first-child th{text-align:center;}
+  table.data tbody tr:nth-child(even){background:var(--card);}
+  table.data tfoot td{font-weight:800;color:var(--navy);background:#fff4ea;}
+  .growth-h3{font-size:22px;margin:38px 0 4px;}
+
+  .proof{margin-top:30px;}
+  .proof summary{cursor:pointer;font-weight:700;color:var(--navy);font-size:16px;padding:14px 18px;background:var(--card);border-radius:10px;border-left:5px solid var(--orange);}
+  .proof summary:hover{color:var(--orange);}
+  .gallery{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:18px;}
+  .gallery figure{margin:0;}
+  .gallery figure.wide{grid-column:1 / -1;}
+  .gallery img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:8px;}
+  .gallery figcaption{color:var(--muted);font-size:13px;margin-top:6px;}
+
   /* contact */
   .contact-card{background:var(--card);border-radius:12px;padding:34px 36px;}
   .contact-list{list-style:none;margin-top:20px;}
@@ -114,6 +135,7 @@
     .takeaway{font-size:18px;padding:22px;}
     section{padding:48px 0 38px;}
     .contact-card{padding:26px 22px;}
+    .gallery{grid-template-columns:1fr;}
   }
 </style>
 </head>
@@ -218,6 +240,88 @@
       </div>
     </div>
     <p class="src">Cost per result from Meta Ads Manager exports, Nov 1, 2025 to Nov 24, 2026. Leads = lead forms; conversations = WhatsApp / Messenger.</p>
+  </div>
+</section>
+
+<!-- Account growth -->
+<section id="account-growth">
+  <div class="wrap">
+    <p class="kicker">Account Growth</p>
+    <h2>Pages grew while the ads ran</h2>
+    <p class="sub">13 brand pages run through 5 ad accounts. Page insights cover Jan 1 to Nov 2026 and are page totals (organic + paid) while ads were running, not ad-only results.</p>
+    <div class="grid">
+      <div class="card"><div class="stat">28.4M</div><div class="stat-label">Facebook + Instagram views (24.1M Facebook, 4.4M Instagram)</div></div>
+      <div class="card"><div class="stat">13.5M</div><div class="stat-label">people reached by ads, 57.8M impressions</div></div>
+      <div class="card"><div class="stat">84K</div><div class="stat-label">content interactions</div></div>
+      <div class="card"><div class="stat">13.5K</div><div class="stat-label">new messaging contacts</div></div>
+    </div>
+    <h3 class="growth-h3">Page insights by industry</h3>
+    <div class="tbl-wrap"><table class="data">
+      <thead>
+        <tr><th rowspan="2">Industry</th><th colspan="4">Facebook</th><th colspan="4">Instagram</th></tr>
+        <tr><th>Views</th><th>Interactions</th><th>Messaging</th><th>Follows</th><th>Views</th><th>Interactions</th><th>Messaging</th><th>Follows</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>iPhone &amp; Apple store</td><td>11.1M</td><td>9.5K</td><td>5.8K</td><td>2.5K</td><td>2.5M</td><td>5.7K</td><td>2.5K</td><td>1.9K</td></tr>
+        <tr><td>Pergolas &amp; garden outdoor</td><td>3.7M</td><td>5.9K</td><td>62</td><td>3.5K</td><td>673.9K</td><td>3.0K</td><td>85</td><td>502</td></tr>
+        <tr><td>Elevators</td><td>2.9M</td><td>19.1K</td><td>2.6K</td><td>2.9K</td><td>156.9K</td><td>3.6K</td><td>91</td><td>285</td></tr>
+        <tr><td>Training &amp; certification</td><td>1.8M</td><td>4.2K</td><td>58</td><td>613</td><td>388.8K</td><td>1.1K</td><td>35</td><td>291</td></tr>
+        <tr><td>Signage &amp; branding</td><td>1.5M</td><td>13.6K</td><td>695</td><td>651</td><td>124.0K</td><td>1.1K</td><td>61</td><td>200</td></tr>
+        <tr><td>Dried fruit</td><td>485.0K</td><td>1.2K</td><td>286</td><td>2.1K</td><td>103.9K</td><td>767</td><td>59</td><td>122</td></tr>
+        <tr><td>Home furnishing &amp; bedding</td><td>487.4K</td><td>1.4K</td><td>152</td><td>547</td><td>76.5K</td><td>608</td><td>7</td><td>-</td></tr>
+        <tr><td>Kids English academy</td><td>433.2K</td><td>1.9K</td><td>392</td><td>1.2K</td><td>46.2K</td><td>535</td><td>37</td><td>206</td></tr>
+        <tr><td>Marketing agency</td><td>360.7K</td><td>1.8K</td><td>38</td><td>572</td><td>75.8K</td><td>2.5K</td><td>33</td><td>280</td></tr>
+        <tr><td>Finance outsourcing</td><td>364.5K</td><td>655</td><td>10</td><td>53</td><td>26.9K</td><td>282</td><td>4</td><td>-</td></tr>
+        <tr><td>Silicone cookware</td><td>317.0K</td><td>669</td><td>232</td><td>116</td><td>128.4K</td><td>2.4K</td><td>195</td><td>482</td></tr>
+        <tr><td>Legal &amp; accounting</td><td>305.3K</td><td>905</td><td>5</td><td>103</td><td>14.7K</td><td>57</td><td>2</td><td>-</td></tr>
+        <tr><td>Dental clinic</td><td>298.1K</td><td>1.5K</td><td>27</td><td>550</td><td>44.6K</td><td>396</td><td>46</td><td>-</td></tr>
+      </tbody>
+    </table></div>
+    <h3 class="growth-h3">Ad spend by ad account</h3>
+    <div class="tbl-wrap"><table class="data" style="min-width:480px;">
+      <thead><tr><th>Ad account</th><th>Reach</th><th>Impressions</th><th>Spend</th></tr></thead>
+      <tbody>
+        <tr><td>iMarket 2024</td><td>9,227,713</td><td>35,628,604</td><td>$35,135.56</td></tr>
+        <tr><td>iMarket 2021</td><td>3,612,088</td><td>14,205,260</td><td>$13,638.34</td></tr>
+        <tr><td>iMarket 2026</td><td>2,225,604</td><td>4,880,123</td><td>$4,822.40</td></tr>
+        <tr><td>iMarket GCC 2024</td><td>387,356</td><td>1,066,624</td><td>$3,030.68</td></tr>
+        <tr><td>iMarket CONV</td><td>991,756</td><td>1,980,266</td><td>$784.47</td></tr>
+      </tbody>
+      <tfoot><tr><td>Total</td><td>13,475,773</td><td>57,760,877</td><td>$57,411.45</td></tr></tfoot>
+    </table></div>
+    <details class="proof">
+      <summary>See the 27 screenshots from Meta Business Suite and Ads Manager</summary>
+      <div class="gallery">
+        <figure><a href="img/iphone-store-fb.jpg" target="_blank" rel="noopener"><img src="img/iphone-store-fb.jpg" alt="iPhone &amp; Apple store, Facebook page insights, Jan to Nov 2026" loading="lazy" width="800" height="410"></a><figcaption>iPhone &amp; Apple store &middot; Facebook</figcaption></figure>
+        <figure><a href="img/iphone-store-ig.jpg" target="_blank" rel="noopener"><img src="img/iphone-store-ig.jpg" alt="iPhone &amp; Apple store, Instagram page insights, Jan to Nov 2026" loading="lazy" width="800" height="410"></a><figcaption>iPhone &amp; Apple store &middot; Instagram</figcaption></figure>
+        <figure><a href="img/pergolas-fb.jpg" target="_blank" rel="noopener"><img src="img/pergolas-fb.jpg" alt="Pergolas &amp; garden outdoor, Facebook page insights, Jan to Nov 2026" loading="lazy" width="800" height="410"></a><figcaption>Pergolas &amp; garden outdoor &middot; Facebook</figcaption></figure>
+        <figure><a href="img/pergolas-ig.jpg" target="_blank" rel="noopener"><img src="img/pergolas-ig.jpg" alt="Pergolas &amp; garden outdoor, Instagram page insights, Jan to Nov 2026" loading="lazy" width="800" height="410"></a><figcaption>Pergolas &amp; garden outdoor &middot; Instagram</figcaption></figure>
+        <figure><a href="img/elevators-fb.jpg" target="_blank" rel="noopener"><img src="img/elevators-fb.jpg" alt="Elevators, Facebook page insights, Jan to Nov 2026" loading="lazy" width="800" height="410"></a><figcaption>Elevators &middot; Facebook</figcaption></figure>
+        <figure><a href="img/elevators-ig.jpg" target="_blank" rel="noopener"><img src="img/elevators-ig.jpg" alt="Elevators, Instagram page insights, Jan to Nov 2026" loading="lazy" width="800" height="410"></a><figcaption>Elevators &middot; Instagram</figcaption></figure>
+        <figure><a href="img/training-fb.jpg" target="_blank" rel="noopener"><img src="img/training-fb.jpg" alt="Training &amp; certification, Facebook page insights, Jan to Nov 2026" loading="lazy" width="800" height="410"></a><figcaption>Training &amp; certification &middot; Facebook</figcaption></figure>
+        <figure><a href="img/training-ig.jpg" target="_blank" rel="noopener"><img src="img/training-ig.jpg" alt="Training &amp; certification, Instagram page insights, Jan to Nov 2026" loading="lazy" width="800" height="410"></a><figcaption>Training &amp; certification &middot; Instagram</figcaption></figure>
+        <figure><a href="img/signage-fb.jpg" target="_blank" rel="noopener"><img src="img/signage-fb.jpg" alt="Signage &amp; branding, Facebook page insights, Jan to Nov 2026" loading="lazy" width="800" height="410"></a><figcaption>Signage &amp; branding &middot; Facebook</figcaption></figure>
+        <figure><a href="img/signage-ig.jpg" target="_blank" rel="noopener"><img src="img/signage-ig.jpg" alt="Signage &amp; branding, Instagram page insights, Jan to Nov 2026" loading="lazy" width="800" height="410"></a><figcaption>Signage &amp; branding &middot; Instagram</figcaption></figure>
+        <figure><a href="img/dried-fruit-fb.jpg" target="_blank" rel="noopener"><img src="img/dried-fruit-fb.jpg" alt="Dried fruit, Facebook page insights, Jan to Nov 2026" loading="lazy" width="800" height="410"></a><figcaption>Dried fruit &middot; Facebook</figcaption></figure>
+        <figure><a href="img/dried-fruit-ig.jpg" target="_blank" rel="noopener"><img src="img/dried-fruit-ig.jpg" alt="Dried fruit, Instagram page insights, Jan to Nov 2026" loading="lazy" width="800" height="410"></a><figcaption>Dried fruit &middot; Instagram</figcaption></figure>
+        <figure><a href="img/home-furnishing-fb.jpg" target="_blank" rel="noopener"><img src="img/home-furnishing-fb.jpg" alt="Home furnishing &amp; bedding, Facebook page insights, Jan to Nov 2026" loading="lazy" width="800" height="410"></a><figcaption>Home furnishing &amp; bedding &middot; Facebook</figcaption></figure>
+        <figure><a href="img/home-furnishing-ig.jpg" target="_blank" rel="noopener"><img src="img/home-furnishing-ig.jpg" alt="Home furnishing &amp; bedding, Instagram page insights, Jan to Nov 2026" loading="lazy" width="800" height="410"></a><figcaption>Home furnishing &amp; bedding &middot; Instagram</figcaption></figure>
+        <figure><a href="img/kids-english-fb.jpg" target="_blank" rel="noopener"><img src="img/kids-english-fb.jpg" alt="Kids English academy, Facebook page insights, Jan to Nov 2026" loading="lazy" width="800" height="410"></a><figcaption>Kids English academy &middot; Facebook</figcaption></figure>
+        <figure><a href="img/kids-english-ig.jpg" target="_blank" rel="noopener"><img src="img/kids-english-ig.jpg" alt="Kids English academy, Instagram page insights, Jan to Nov 2026" loading="lazy" width="800" height="410"></a><figcaption>Kids English academy &middot; Instagram</figcaption></figure>
+        <figure><a href="img/agency-fb.jpg" target="_blank" rel="noopener"><img src="img/agency-fb.jpg" alt="Marketing agency, Facebook page insights, Jan to Nov 2026" loading="lazy" width="800" height="410"></a><figcaption>Marketing agency &middot; Facebook</figcaption></figure>
+        <figure><a href="img/agency-ig.jpg" target="_blank" rel="noopener"><img src="img/agency-ig.jpg" alt="Marketing agency, Instagram page insights, Jan to Nov 2026" loading="lazy" width="800" height="410"></a><figcaption>Marketing agency &middot; Instagram</figcaption></figure>
+        <figure><a href="img/finance-outsourcing-fb.jpg" target="_blank" rel="noopener"><img src="img/finance-outsourcing-fb.jpg" alt="Finance outsourcing, Facebook page insights, Jan to Nov 2026" loading="lazy" width="800" height="410"></a><figcaption>Finance outsourcing &middot; Facebook</figcaption></figure>
+        <figure><a href="img/finance-outsourcing-ig.jpg" target="_blank" rel="noopener"><img src="img/finance-outsourcing-ig.jpg" alt="Finance outsourcing, Instagram page insights, Jan to Nov 2026" loading="lazy" width="800" height="410"></a><figcaption>Finance outsourcing &middot; Instagram</figcaption></figure>
+        <figure><a href="img/cookware-fb.jpg" target="_blank" rel="noopener"><img src="img/cookware-fb.jpg" alt="Silicone cookware, Facebook page insights, Jan to Nov 2026" loading="lazy" width="800" height="410"></a><figcaption>Silicone cookware &middot; Facebook</figcaption></figure>
+        <figure><a href="img/cookware-ig.jpg" target="_blank" rel="noopener"><img src="img/cookware-ig.jpg" alt="Silicone cookware, Instagram page insights, Jan to Nov 2026" loading="lazy" width="800" height="410"></a><figcaption>Silicone cookware &middot; Instagram</figcaption></figure>
+        <figure><a href="img/legal-accounting-fb.jpg" target="_blank" rel="noopener"><img src="img/legal-accounting-fb.jpg" alt="Legal &amp; accounting, Facebook page insights, Jan to Nov 2026" loading="lazy" width="800" height="410"></a><figcaption>Legal &amp; accounting &middot; Facebook</figcaption></figure>
+        <figure><a href="img/legal-accounting-ig.jpg" target="_blank" rel="noopener"><img src="img/legal-accounting-ig.jpg" alt="Legal &amp; accounting, Instagram page insights, Jan to Nov 2026" loading="lazy" width="800" height="410"></a><figcaption>Legal &amp; accounting &middot; Instagram</figcaption></figure>
+        <figure><a href="img/dental-fb.jpg" target="_blank" rel="noopener"><img src="img/dental-fb.jpg" alt="Dental clinic, Facebook page insights, Jan to Nov 2026" loading="lazy" width="800" height="410"></a><figcaption>Dental clinic &middot; Facebook</figcaption></figure>
+        <figure><a href="img/dental-ig.jpg" target="_blank" rel="noopener"><img src="img/dental-ig.jpg" alt="Dental clinic, Instagram page insights, Jan to Nov 2026" loading="lazy" width="800" height="410"></a><figcaption>Dental clinic &middot; Instagram</figcaption></figure>
+        <figure class="wide"><a href="img/ad-accounts.jpg" target="_blank" rel="noopener"><img src="img/ad-accounts.jpg" alt="Meta Ads Manager spend by ad account" loading="lazy" width="695" height="316"></a><figcaption>Meta Ads Manager &middot; spend by ad account</figcaption></figure>
+      </div>
+    </details>
+    <p class="src">Source: Meta Business Suite page insights and Meta Ads Manager. Screenshots are cropped to the page totals; client names withheld.</p>
   </div>
 </section>
 
